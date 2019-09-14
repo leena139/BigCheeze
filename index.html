@@ -12,7 +12,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
 
+  <!-- <link rel="stylesheet" href="https://drvic10k.github.io/bootstrap-sortable/Contents/bootstrap-sortable.css" /> -->
     <title>MJ-CW2</title>
 
  <!-- Optional JavaScript -->
@@ -24,12 +26,13 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  
-   
+ <!--  <script src="https://drvic10k.github.io/bootstrap-sortable/Scripts/bootstrap-sortable.js"></script>
+    -->
   <link rel="stylesheet" type="text/css" href="./css/common.css">
 
 
   <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+
 
 
 </head>
@@ -48,110 +51,166 @@
 
 
  </nav>
- 
 
-  <div >
-   
-  <table  class="table table-bordered table-hover mb-0 table-wrapper-scroll-y my-custom-scrollbar" style=" max-width: 60%; left: 0; text-align: center;float: left;margin-right:100px;margin-top:20px;">
-    <thead>
-      <tr >
-        <th scope="col">Wizards</th>
+
+ 
+  
+
+
+ <div class="row text-white "  style="max-width:100%; padding-left: 20px;top:0;margin-left:10px;margin-right:10px;height:60px;text-align: center; ">
+  <div class=" col-sm-4">Number of Wizards at the start of Tournament: </div>
+  <div class=" col-sm-4">Number of remaining Wizards in the tournament:</div>
+<div class="col-sm-4">Total Power (current):  </div>
+  
+  <!-- Force next columns to break to new line -->
+  <div class="w-100"></div>
+
+  <div class=" col-sm-4">100</div>
+  <div class=" col-sm-4">75</div>
+  <div class=" col-sm-4">87</div>
+</div>
+
+<div class="container  "> 
+
+  <table id="table" class="table table1 table-hover mb-0 table-wrapper-scroll-y my-custom-scrollbar" style=" left: 0px; text-align: center;float: left; margin-left:30px;margin-right:30px;margin-top:20px;">
+   <thead>
+      <tr>
+       
+        <th scope="col" >Wizard ID</th>
         <th scope="col">Power</th>
-        <th scope="col">Summation(on wizard)</th>
-        <th scope="col">Summation(of bettors)</th>
-        <th scope="col">Ether</th>
-         <th scope="col">Place Bet</th>
+        <th scope="col">Total amount bet on Wizard</th>
+        <th scope="col">Number of Bettors on Wizard</th>
+        <th scope="col">Bet amount (in ETH)</th>
+         <th scope="col"></th>
       
-    
-   </tr>
-    </thead>
+   
+  </tr>
+   </thead>
+    <tbody>
     <tr>
-         <th scope="row">1</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><input type="text"></td>
+     
+          <td>1</td>
+        <td>10</td>
+        <td>40</td>
+        <td>10</td>
+        <td><input type="text" class="col-xs-2"></td>
          <td><input type="button" value="Place bet"   class="btn btn-dark"></td>
         </tr>
       
    <tr>
-         <th scope="row">2</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><input type="text"></td>
+         <td >2</td>
+        <td>25</td>
+        <td>20</td>
+        <td>10</td>
+        <td><input type="text" class="col-xs-2"></td>
          <td><input type="button" value="Place bet"  class="btn btn-dark"></td>
         </tr>
          <tr>
-         <th scope="row">3</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><input type="text"></td>
+          <td >3</td>
+        <td>45</td>
+        <td>20</td>
+        <td>10</td>
+        <td><input type="text" class="col-xs-2" ></td>
          <td><input type="button" value="Place bet"  class="btn btn-dark"></td>
         </tr>
          <tr>
-          <th scope="row">4</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><input type="text"></td>
+          <td >9</td>
+        <td>12</td>
+        <td>30</td>
+        <td>10</td>
+        <td><input type="text" class="col-xs-2"></td>
          <td><input type="button" value="Place bet"  class="btn btn-dark"></td>
         </tr>
          <tr>
-          <th scope="row">5</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><input type="text"></td>
+          <td >5</td>
+        <td>13</td>
+        <td>45</td>
+        <td>10</td>
+        <td><input type="text" class="col-xs-2"></td>
          <td><input type="button" value="Place bet"  class="btn btn-dark"></td>
         </tr>
         
          <tr>
-          <th scope="row">6</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><input type="text"></td>
+           <td >6</td>
+        <td>78</td>
+        <td>21</td>
+        <td>10</td>
+        <td><input type="text" class="col-xs-2"></td>
          <td><input type="button" value="Place bet"  class="btn btn-dark"></td>
         </tr>
         
+         
          <tr>
-          <th scope="row">7</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><input type="text"></td>
+          <td >7</td>
+        <td>43</td>
+        <td>5</td>
+        <td>10</td>
+        <td><input type="text" class="col-xs-2"></td>
          <td><input type="button" value="Place bet"  class="btn btn-dark"></td>
         </tr>
-         <tr>
-          <th scope="row">8</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><input type="text"></td>
+        
+        <tr>
+          <td >8</td>
+        <td>15</td>
+        <td>80</td>
+        <td>10</td>
+        <td><input type="text" class="col-xs-2"></td>
          <td><input type="button" value="Place bet"  class="btn btn-dark"></td>
         </tr>
+        
+        <tr>
+          <td >9</td>
+        <td>32</td>
+        <td>30</td>
+        <td>10</td>
+        <td><input type="text" class="col-xs-2" ></td>
+         <td><input type="button" value="Place bet"  class="btn btn-dark"></td>
+        </tr>
+         <tbody>
    </table>
-   
-   
-<div class="card text-white bg-secondary mb-3"  style="width: 20rem;margin-top:20px; ">
-  <table class="table  table-hover">
-  <tr>
-  <th>Total Count</th>
-  <td>100</td>
-  </tr>
   
-  <tr>
-  <th>Total Remaining</th>
-  <td>50</td>
-  </tr>
+  <div id="data"></div>
   
-   <tr>
-  <th>Total Power</th>
-  <td>100</td>
-  </tr>
-  </table>
+  
+  
+  <!--  <script>
+   
+  
+  
+   var wizid;
+   var power=[];
+   var total_amt=[];
+   var No_of_bet_amt=[];
+  
+
+   
+    var tablecontent=
+    '<table   id="table" class="table table1 table-hover mb-0 table-wrapper-scroll-y my-custom-scrollbar" style=" max-width: 60%; left: 0; text-align: center;float: left; margin-left:20px;margin-right:100px;margin-top:20px;">
+    <tr>
+    <td>Wizrad Id '+wizid+'</td>
+    <td>Power </td>
+    <td>Total amt '+total_amt[]+'</td> 
+    <td>No_of_bet_amt</td>
+    </tr>
+    </table>';
+    $("#data").html(duelFixture);
+    
+   
+    </script>
+ -->
+    <footer></footer>
+
+
+
+
+    </body>
+    </html>
+
+   
+   </script>
+   
+
+
  
 </div>
   </div>
@@ -166,3 +225,4 @@
  
 </body>
 </html>
+
